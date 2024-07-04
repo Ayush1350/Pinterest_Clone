@@ -31,4 +31,4 @@ This project is a clone of Pinterest, created using Express.js, Node.js, MongoDB
 ### Homepage
 ![Homepage](./public//images/ProfilePage.png)
 
-###Created By AYUSH PATEL.
+### Created By AYUSH PATEL.
