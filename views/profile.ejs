@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="stylesheets/profileStyle.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="profileCard">
+      <div class="upper">
+        <img src="https://i.imgur.com/Qtrsrk5.jpg" alt="Background image" />
+      </div>
+      <div class="user">
+        <div class="profile">
+          <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhhY2tlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Profile image" />
+        </div>
+      </div>
+      <div class="userProfile">
+        <h2 class="userName">AYUSH</h2>
+        <div class="userProfileData">
+          <div class="stats">
+            <h6>Followers</h6>
+            <span>8,797</span>
+          </div>
+          <div class="stats">
+            <h6>Likes</h6>
+            <span>142</span>
+          </div>
+          <div class="stats">
+            <h6>Post</h6>
+            <span>2</span>
+          </div>
+        </div>
+        <a href="/logout"><button class="followBtn">Logout</button></a>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <input type="file" name="file">
+          <input type="text" name="filecaption" placeholder="Enter caption">
+          <input type="submit" value="Upload">
+        </form>
+      </div>
+    </div>
+
+    <div class="postContainer">
+      <% if (user.posts.length === 0) { %>
+        <p>No posts</p>
+      <% } else { %>
+        <% user.posts.slice().reverse().forEach(function(post) { %>
+          <div class="cardPost">
+            <img src="/images/uploads/<%= post.image %>" alt="Post image">
+            <h4><%= post.imageText %></h4>
+
+          </div>
+        <% }) %>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>

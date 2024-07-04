@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dadada;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginContainer {
+  background-color: white;
+  width: 480px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+}
+
+.img1 {
+  width: 70px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.detail, .logindetail {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  color: gray;
+  border: 1px solid rgb(218, 214, 214);
+  border-radius: 10px;
+}
+
+.logindetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 10px auto; /* Center horizontally */
+}
+
+.detail:focus, .logindetail:focus {
+  box-shadow: 0px 0px 5px rgba(15, 91, 231, 0.4);
+  outline: none;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.btn, .loginbtn {
+  height: 40px;
+  border: hidden;
+  border-radius: 20px;
+  font-size: 18px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+}
+
+.loginbtn {
+  width: 25%;
+}
+
+.int {
+  background-color: #f30d19;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.int:hover {
+  background-color: #df0812;
+}
+
+.or {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.fbk, .ggl {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.fbk {
+  background-color: rgb(9, 128, 240);
+  color: white;
+}
+
+.fbk a {
+  text-decoration: none;
+  color: white;
+}
+
+.fbk:hover {
+  background-color: rgb(8, 110, 206);
+}
+
+.ggl {
+  background-color: #ccc;
+  color: black;
+}
+
+.ggl a {
+  text-decoration: none;
+  color: black;
+}
+
+.ggl:hover {
+  background-color: #a0a0a0;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 10px 0;
+  opacity: 0.7;
+}
+
+footer p:last-child {
+  opacity: 1;
+}
+
+hr {
+  width: 50%;
+  opacity: 0.4;
+  margin: 10px auto;
+}
+
+.upbtn {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  width: 100px;
+  padding: 12px;
+  background-color: rgb(241, 236, 236);
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.error {
+  font-weight: 500;
+  color: red;
+  text-transform: capitalize;
+  margin: 7px 0;
+}

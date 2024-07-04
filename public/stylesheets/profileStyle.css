@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+    background-color: #545454;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileCard {
+    width: 380px;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.upper {
+    height: 100px;
+}
+
+.upper img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.user {
+    position: relative;
+    text-align: center;
+}
+
+.profile {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 90px;
+    width: 90px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.profile img {
+    height: 80px;
+    width: 80px;
+    margin-top: 2px;
+    border-radius: 50%;
+}
+
+.follow {
+    border-radius: 15px;
+    padding: 0 20px;
+    height: 35px;
+}
+
+.userProfile {
+    margin-top: 3rem;
+    text-align: center
+}
+
+.userProfileData {
+    height: 40px;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    padding-left: 1.5rem ;
+    padding-right: 1.5rem ;
+}
+
+
+.followBtn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    margin-top: 2.5rem ;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.7rem;
+    color: #fff;
+    background-color: #007bff;
+}
+
+.followBtn:hover {
+    cursor: pointer;
+    background-color: #0b78ed;
+}
+
+.stats {
+    text-align: center;
+}
+
+.stats h6 {
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.stats span {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+
+.postContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cardPost {
+    width: 250px;
+    background-color: #191A1D;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    color: #fff;
+}
+
+/* Added style for image fitting */
+img {
+    object-fit: cover;
+    width: 100%;
+    /* Optional: Set width to 100% for full width within card */
+    border-radius: 15px;
+
+}
